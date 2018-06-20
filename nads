@@ -1,0 +1,69 @@
+Policy:
+  Policy Sets:
+
+  Profiler:
+    Profiling Policies:
+      Apple-iPhone
+    Logical Profiles:
+      Printers
+
+  Policy Elements:
+    Dictionaries:
+      System:
+      User:
+    Conditions:
+      Authentication:
+        Simple Conditions:
+        Compound Conditions:
+      Authorization:
+        Simple Conditions:
+        Compound Conditions:
+      Profiling:
+      Posture:
+      Guest:
+        Guest Simple Conditions:
+        Guest Compound Conditions:
+      Common:
+    Results:
+      Authentication:
+        Allowed Protocols:
+          Default Network Access
+      Authorization:
+        Authorization Profiles:
+          Deny Access
+          PermitAccess
+        Downloadable ACLs:
+      Profiling:
+        Exception Actions:
+        Network Scan (NAMP) Actions:
+      Posture:
+        Remediation Actions:
+        Requirements:
+      Client Provisioning:
+        Resources:
+
+
+Administration:
+
+  System:
+    Admin Access:
+      Authentication:
+      Authorization:
+      Administrators:
+
+  Identity Management:
+    Identities:
+      Users:
+        user1
+    Groups:
+      Endpoint Identity Groups:
+        Profiled
+      User Identity Groups:
+        All Groups
+  Network Resources:
+    Network Devices:
+      WLC01
+    Network Device Groups:
+      All Device types
+      All Locations
+      Mode
